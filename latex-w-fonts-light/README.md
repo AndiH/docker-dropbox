@@ -21,6 +21,6 @@ docker run --rm -i --user="$(id -u):$(id -g)" --net=none -v $PWD:/data andih/lat
 
 ## Notes on Lightness
 
-The reduction in size wrt to `latex-w-fonts` comes with a price: Some packages might not be installed. For example are basically all language packges missing.
+The reduction in size with respect to to `latex-w-fonts` comes with a price: Some packages might not be installed. For example are basically all language packages missing.
 
 If you find something missing, the reasonable solution is to use `latx-w-fonts-light` as a base (`FROM`) and expand it for your own needs. Let me know if you do this; I'm very much curious what you find is missing.
