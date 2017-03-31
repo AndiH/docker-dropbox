@@ -3,7 +3,7 @@ MAINTAINER Andreas Herten <a.herten@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -q && \
-    apt-get install -qy texlive-full python-pygments git wget && \
+    apt-get install -qy texlive-full python-pygments git wget biber && \
     apt-get clean
 
 RUN git clone --depth 1 https://github.com/google/fonts.git google-fonts
