@@ -15,4 +15,4 @@ Your usual local LaTeX call needs to be prefixed to target the docker image. To 
 docker run --rm -i --user="$(id -u):$(id -g)" --net=none -v $PWD:/data andih/latex-w-fonts:latest latexmk -xelatex -shell-escape FILE.TEX
 ```
 
-(The command is from [blang/latex-docker](https://github.com/blang/latex-docker), who wrapped into a [handy shell script, `dockercmd.sh`](https://github.com/blang/latex-docker/blob/master/dockercmd.sh).)
+(The command is from [blang/latex-docker](https://github.com/blang/latex-docker), who wrapped it into a [handy shell script, `dockercmd.sh`](https://github.com/blang/latex-docker/blob/master/dockercmd.sh).)

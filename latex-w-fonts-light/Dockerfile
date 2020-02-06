@@ -3,7 +3,7 @@ MAINTAINER Andreas Herten <a.herten@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -q && \
-    apt-get install -qy texlive-base texlive-lang-german texlive-latex-extra texlive-extra-utils texlive-metapost texlive-xetex texlive-science texlive-generic-extra \
+    apt-get install -qy build-essential texlive-base texlive-lang-german texlive-latex-extra texlive-extra-utils texlive-metapost texlive-xetex texlive-science texlive-generic-extra \
     python-pygments latexmk xindy \
     git-core fontconfig && \
     apt-get clean
