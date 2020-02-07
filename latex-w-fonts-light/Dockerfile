@@ -20,6 +20,8 @@ RUN mkdir -p /usr/share/fonts/opentype/adobe-fonts/
 RUN find $PWD/adobe* -name "*.otf" -exec install -m644 {} /usr/share/fonts/opentype/adobe-fonts/ \; || return 1
 RUN rm -rf $PWD/adobe*
 
+RUN apt-get install -qy fonts-liberation
+
 RUN fc-cache -f -v
 
 WORKDIR /data
